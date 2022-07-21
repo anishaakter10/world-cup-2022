@@ -326,7 +326,7 @@ hr {
 -------------------------------------------  */
 
  /* mobile device  */
- @media screen and (max-width: 588px) {
+ @media screen and (max-width: 580px) {
 
 
     .container {
@@ -440,7 +440,7 @@ hr {
 }
 
 /* medium device or tab  */
-@media screen and (min-width: 579px) and (max-width: 992px) {
+@media screen and (min-width: 581px) and (max-width: 992px) {
 
     .container {
         width: 100%;
