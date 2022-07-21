@@ -25,7 +25,7 @@ body {
     padding: 0px 80px;
 }
 
-.first-section {
+.first-banner {
     display: flex;
     justify-content: space-around;
     overflow: hidden;
@@ -128,13 +128,13 @@ button {
 }
 
 #blog-btn {
-    background-color: #13934a;
+    background-color: #d62515;
     margin-bottom: 15px;
     color: white;
 }
 
 #up-btn {
-    background-color: #13934a;
+    background-color: #d62515;
     color: white;
 }
 
@@ -257,9 +257,6 @@ button {
     padding-bottom: 40px;
 }
 
-
-
-
 /* footer  */
 footer {
     background-color: black;
@@ -315,4 +312,231 @@ hr {
 
 .fab:hover {
     color: rgb(255, 0, 68);
+}
+
+/* --------------footer end---------------  */
+
+#view {
+    display: none;
+}
+
+
+/* --------------------------------------------- 
+             responsive 
+-------------------------------------------  */
+
+ /* mobile device  */
+ @media screen and (max-width: 588px) {
+
+
+    .container {
+        width: 100%;
+    }
+
+    .first-banner {
+        flex-direction: column;
+        width: 334px;
+        height: auto;
+    }
+
+    .half-width {
+        width: 100%;
+
+    }
+
+    .half-width h1 {
+        font-size: 40px;
+        margin-right: 10px;
+    }
+
+    .half-width h1:hover {
+        transform: scale(1.1);
+        transition: transform 7s;
+        color: rgba(68, 229, 10, 0.649);
+    }
+
+
+    .half-width img {
+        width: 90%;
+        margin-left: 15px;
+
+
+    }
+
+    /* 2nd part */
+    .cards-blogs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+
+    /* .match upcomming web page 2 */
+    .matchs {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: -40px;
+
+    }
+
+    .match {
+        width: 100%;
+    }
+
+/*------------------------------ 
+              footer 
+-------------------------------*/
+footer {
+    margin: 0;
+
+}
+
+.goal {
+    text-align: center;
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.footer-text {
+    width: 100%;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+
+}
+
+.footer-text a {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0;
+
+}
+
+/* .social-icon {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: red;
+} */
+
+}
+
+/* medium device or tab  */
+@media screen and (min-width: 579px) and (max-width: 992px) {
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .first-banner {
+        width: 90%;
+        padding-bottom: 26px;
+        margin: 0 auto;
+    }
+
+    .half-width h1 {
+        color: white;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        margin-left: 70px;
+        margin-top: 100px;
+    }
+
+    .half-width h1:hover {
+        transform: scale(1.2);
+        transition: transform 10s;
+        color: #d62515;
+    }
+
+    .half-width {
+        width: 50%;
+    }
+
+    .half-width img {
+        width: 500px;
+    }
+    
+    .cards-blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        padding: 80px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        align-items: center;
+        /* margin-left: 200px;
+        margin-bottom: 40px; */
+    }
+
+    .blogs {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 20px;
+        margin: 0 auto;
+
+    }
+
+    .blog {
+        width: 100%;
+        margin-right: 30px;
+        gap: 10px 100px;
+        margin-right: 50px;
+        /* padding: 20px; */
+    }
+
+    .matchs {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 80px;
+        margin: 0 auto;
+
+    }
+
+    .match {
+        width: 100%;
+        margin-right: 30px;
+        /* padding: 20px; */
+    }
+
+    #view {
+        display: block;
+        margin-left: 350px;
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+
+
 }
